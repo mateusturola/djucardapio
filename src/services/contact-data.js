@@ -1,7 +1,10 @@
+import defaultImage from '../img/default_image.jpg'
+
 export const contactDetails = {
   name: "Pizzaria D'Ju",
   slogan: 'Uma nova opção de pizzaria, com qualidade e dedicação direto pra sua residência.',
   address: 'Rua Joaquim Fagundes Ferreira, 1060 Vila Ursulino, Barra Mansa/ RJ',
+  logo: defaultImage,
   whatsApp: {
     icon: 'fab fa-whatsapp',
     name: '24 99968-5136',

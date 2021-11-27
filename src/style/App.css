@@ -1,3 +1,7 @@
+@import url(./default-props.css);
+body{
+  background-color: var(--bgClaro);
+}
 
 .App {
   text-align: center;

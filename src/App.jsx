@@ -1,9 +1,9 @@
-import './App.css';
+import './style/App.css';
 import Routes from './pages/Routes';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App box-border">
       <h1>
        <Routes />
       </h1>
