@@ -9,7 +9,7 @@ class Routes extends Component {
     return (
       <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Switch>
-          <Route exact path="/" component={Home} />
+          <Route exact path="/" component={Cardapio} />
           <Route exact path="/cardapio" component={Cardapio} />
           <Route exact path="*" component={NotFound} />
         </Switch>
