@@ -24,7 +24,7 @@ class Home extends Component {
           >
             VER CARDÁPIO
           </Button>
-          <Fab color="primary" aria-label="edit">
+          <Fab color="primary" aria-label="edit" href="https://api.whatsapp.com/send?phone=5524999685136 ">
             <WhatsApp />
           </Fab>
         </div>

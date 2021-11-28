@@ -58,3 +58,7 @@
   font-size: 2em;
   margin: 0 5px;
 }
+
+	.MuiFab-primary{
+    background-color: green !important;
+  }
