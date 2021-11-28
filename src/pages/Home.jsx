@@ -3,12 +3,10 @@ import { Button, Fab } from '@mui/material';
 import AddCircleTwoToneIcon from '@mui/icons-material/AddCircleTwoTone';
 import '../style/Home.css';
 import { contactDetails } from '../services/contact-data';
-import SocialLinks from '../components/SocialLinks';
-import ButtonWpp from '../components/ButtonWpp';
 import WhatsApp from '@mui/icons-material/WhatsApp';
 class Home extends Component {
   render() {
-    const { name, address, logo, whatsApp } = contactDetails;
+    const { logo } = contactDetails;
     return (
       <section className="home">
         <div className="content blur">
