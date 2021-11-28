@@ -17,8 +17,8 @@ class CategoryProduct extends Component {
 
         {category.map(
           ({ id, nome, ingrediente, price: { gigante, maracana, pequena } }) => (
-            <Grow in="true"  style={{ transformOrigin: '0 0 0' }}>
-            <Card sx={{ maxWidth: 345 }} key={ id } className="items" >
+            <Grow in={ true }  style={{ transformOrigin: '0 0 0' }}>
+            <Card sx={{ Width: 100 }} key={ id } className="items" >
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div" className="product-name">
                   {nome}

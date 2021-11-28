@@ -30,6 +30,8 @@ export default function Categories() {
           variant="scrollable"
           scrollButtons
           allowScrollButtonsMobile
+          centered
+          
         >
           <Tab label="Tradicional" {...a11yProps(0)} />
           <Tab label="Especiais" {...a11yProps(1)} />
