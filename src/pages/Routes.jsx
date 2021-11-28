@@ -7,7 +7,7 @@ import NotFound from './NotFound';
 class Routes extends Component {
   render() {
     return (
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/cardapio" component={Cardapio} />
