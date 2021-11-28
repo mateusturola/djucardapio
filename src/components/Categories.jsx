@@ -1,12 +1,10 @@
 import * as React from 'react';
-import PropTypes from 'prop-types';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
-import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import TabPanel from './tab-categories/TabPanel';
 import Product from './Product';
 
+import '../style/Categories.css'
 
 function a11yProps(index) {
   return {
@@ -33,12 +31,11 @@ export default function Categories() {
           scrollButtons
           allowScrollButtonsMobile
         >
-          <Tab label="Item One" {...a11yProps(0)} />
-          <Tab label="Item Two" {...a11yProps(1)} />
-          <Tab label="Item Three" {...a11yProps(2)} />
-          <Tab label="Item One" {...a11yProps(3)} />
-          <Tab label="Item Two" {...a11yProps(4)} />
-          <Tab label="Item Three" {...a11yProps(5)} />
+          <Tab label="Tradicional" {...a11yProps(0)} />
+          <Tab label="Especiais" {...a11yProps(1)} />
+          <Tab label="Vegetariana" {...a11yProps(2)} />
+          <Tab label="Doces" {...a11yProps(3)} />
+          <Tab label="Bebidas" {...a11yProps(4)} />
         </Tabs>
       </Box>
       

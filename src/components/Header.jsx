@@ -2,24 +2,22 @@ import React, { Component } from 'react';
 import { contactDetails } from '../services/contact-data';
 import ButtonWpp from './ButtonWpp';
 import '../style/header.css';
-import Categories from './Categories';
+import SocialLinks from './SocialLinks';
 
 class Header extends Component {
   render() {
-    const { logo, name, whatsApp } = contactDetails;
+    const { logo, whatsApp } = contactDetails;
     return (
-      <>
         <header className="header">
           <div className="header-logo">
             <img src={logo} alt="Logo" />
           </div>
           <div className="header-info">
-            <h5 className="header-title">{name}</h5>
+            {/* <h5 className="header-title">{name}</h5> */}
+            <SocialLinks />
             <ButtonWpp whatsApp={whatsApp} />
           </div>
         </header>
-        <Categories />
-      </>
     );
   }
 }

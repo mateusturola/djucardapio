@@ -1,14 +1,23 @@
 import React, { Component } from 'react';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import { Button } from '@mui/material';
 
 class ButtonWpp extends Component {
   render() {
-    const { whatsApp: { icon, name, link } } = this.props;
+    const {
+      whatsApp: { name, link },
+    } = this.props;
     return (
-      <a href={ link } target="blank">
-        <div className="call-whats">
-          <i className={icon}/> { name }
-        </div>
-      </a>
+      <Button
+        variant="contained" 
+        className="wpp-btn"
+        href={link}
+        target="blank"
+        startIcon={<WhatsAppIcon />}
+        size="large"
+      >
+        {name}
+      </Button>
     );
   }
 }

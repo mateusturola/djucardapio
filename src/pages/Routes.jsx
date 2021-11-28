@@ -4,19 +4,16 @@ import Cardapio from './Cardapio';
 import Home from './Home';
 import NotFound from './NotFound';
 
-
 class Routes extends Component {
   render() {
     return (
-      <div>
-        <BrowserRouter>
-          <Switch>
-            <Route exact path="/" component={ Home } />
-            <Route exact path="/cardapio" component={ Cardapio } />
-            <Route exact path="*" component={ NotFound  } />
-          </Switch>
-        </BrowserRouter>
-      </div>
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/cardapio" component={Cardapio} />
+          <Route exact path="*" component={NotFound} />
+        </Switch>
+      </BrowserRouter>
     );
   }
 }

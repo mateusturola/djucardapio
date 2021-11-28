@@ -18,7 +18,7 @@ const { children, value, index, ...other } = this.props;
     >
       {value === index && (
         <Box sx={{ p: 3 }}>
-          <Typography>{children}</Typography>
+          <Typography variant="span">{children}</Typography>
         </Box>
       )}
     </div>

@@ -1,0 +1,35 @@
+@import url(./default-props.css);
+
+.Mui-selected, .MuiTab-textColorInherit {
+  color: var(--cor2) !important;
+}
+
+.MuiTabs-indicator {
+  background-color: var(--cor2) !important;
+}
+
+.items {
+  margin: 15px 0;
+}
+
+.items:hover {
+  background-color: var(--hovClaro) !important;
+}
+
+.price {
+  padding: 10px !important;
+}
+
+.price-title {
+  color: var(--cor2) !important;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.product-description {
+  margin: 20px 0 !important;
+}
+
+.product-name {
+  text-transform: uppercase !important;
+}

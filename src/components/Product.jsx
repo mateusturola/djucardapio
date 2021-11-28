@@ -1,30 +1,34 @@
 import React, { Component } from 'react';
+import CategoryProduct from './CategoryProduct';
 import TabPanel from './tab-categories/TabPanel';
+
+import { pizzaTradicional } from '../services/pizza-trad';
+import { pizzaEsp } from '../services/pizza-esp';
+import { pizzaVegetariana } from '../services/pizza-veg';
+import { pizzaDoce } from '../services/pizza-doce';
+
 
 class Product extends Component {
   render() {
     const { value } = this.props;
     return (
-      <div>
+      <section>
         <TabPanel value={value} index={0}>
-          Item One
+          <CategoryProduct category={ pizzaTradicional } />
         </TabPanel>
         <TabPanel value={value} index={1}>
-          Item Two
+          <CategoryProduct category={ pizzaEsp } />
         </TabPanel>
         <TabPanel value={value} index={2}>
-          Item Three
+          <CategoryProduct category={ pizzaVegetariana } />
         </TabPanel>
         <TabPanel value={value} index={3}>
-          Item One
+          <CategoryProduct category={ pizzaDoce } />
         </TabPanel>
         <TabPanel value={value} index={4}>
-          Item Two
+          Em breve
         </TabPanel>
-        <TabPanel value={value} index={5}>
-          Item Three
-        </TabPanel>
-      </div>
+      </section>
     );
   }
 }

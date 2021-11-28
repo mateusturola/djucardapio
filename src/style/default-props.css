@@ -1,5 +1,7 @@
 :root {
   --bgClaro: rgb(240, 240, 240);
-  --cor1: rgb(112, 4, 4);
-  --hovClaro:  rgb(217, 217, 217)
+  --cor1: rgb(46, 46, 46);
+  --cor2: rgb(112, 4, 4);
+  --hovClaro:  rgb(217, 217, 217);
+  --hovClaro2:  rgb(200, 200, 200);
 }
